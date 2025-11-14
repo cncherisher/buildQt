@@ -1,7 +1,6 @@
 name: build_Qt5.15.18_msvc2022
 
 on: workflow_dispatch
-#on: [push, pull_request]
 
 env:
   QT_VERSION: 5.15.18
@@ -10,7 +9,7 @@ env:
 
 jobs:
   windows_msvc_static_release:
-    runs-on: windows-latest
+    runs-on: self-hosted
 
     steps:
     # 检出本仓库
